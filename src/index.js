@@ -1,4 +1,3 @@
-import { createTopNavigationBar } from './home-page';  
-import './style.css';
+import { pageLoad } from "./pageLoad";
 
-createTopNavigationBar();
+pageLoad();

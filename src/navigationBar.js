@@ -1,3 +1,4 @@
+import "./style.css";
 export { createTopNavigationBar };
 
 function createTopNavigationBar() {
@@ -24,3 +25,4 @@ function createTopNavigationBar() {
   navigationContainer.appendChild(menuNavigationTab);
   navigationContainer.appendChild(contactNavigationTab);
 }
+

@@ -1,1 +1,4 @@
-console.log(`Is everything working?`);
+import { createTopNavigationBar } from './home-page';  
+import './style.css';
+
+createTopNavigationBar();

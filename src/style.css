@@ -7,3 +7,21 @@
 .navigation-tabs {
   font-size: 1.6rem;
 }
+
+.about-section {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
+.about-section-image {
+  height: 400px;
+  width: 100%;
+}
+
+.about-section-text {
+  margin-top: 50px;
+  font-weight: 400;
+}

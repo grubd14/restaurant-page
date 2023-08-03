@@ -3,8 +3,10 @@ import RestaurantImage from "./restaurant.jpg";
 
 function createAboutSection() {
   const contentBody = document.getElementById("content");
+  const pageContent = document.createElement("div");
   const aboutSectionContainer = document.createElement("div");
 
+  pageContent.classList.add("page-contents");
   aboutSectionContainer.classList.add("about-section");
 
   const aboutSectionImage = document.createElement("div");
@@ -21,5 +23,7 @@ function createAboutSection() {
   aboutSectionContainer.appendChild(aboutSectionImage);
   aboutSectionContainer.appendChild(aboutSectionText);
   aboutSectionImage.appendChild(restroImage);
-  contentBody.appendChild(aboutSectionContainer);
+
+  contentBody.appendChild(pageContent);
+  pageContent.appendChild(aboutSectionContainer);
 }

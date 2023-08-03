@@ -2,9 +2,12 @@ export { createMenuSection };
 
 function createMenuSection() {
   const contentBody = document.getElementById("content");
+  const pageContent = document.createElement('div');
+
+  pageContent.classList.add('page-contents');
 
   const menuItemsContainer = document.createElement("div");
-  menuItemsContainer.classList.add("menu-container");
+  menuItemsContainer.classList.add("menu-section");
 
   const menuSection = document.createElement("div");
   menuSection.classList.add("menu-items");
@@ -16,6 +19,7 @@ function createMenuSection() {
 <ul>Chicken Tandoori</ul>
 <ul>Chicken Tandoori</ul>`;
 
-  contentBody.appendChild(menuItemsContainer);
+  contentBody.appendChild(pageContent);
+  pageContent.appendChild(menuItemsContainer);
   menuItemsContainer.appendChild(menuSection);
 }
